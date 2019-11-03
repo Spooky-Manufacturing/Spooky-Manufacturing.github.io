@@ -13,7 +13,7 @@ Unlike many current quantum computer startups, our computers are based on photon
 Because our computers are designed to use off-the-shelf components, anyone with minimal tooling can build our quantum computers and circuits, whether industrially or in your own home making experimenting a breeze!
 
 ### Active Projects
-#### QRNG - Quantum RNG circuit
-#### QEDA - Circuit Design Software
-#### QubitDuino - Quantum Arduino Shield
-#### QController - Quantum Computer Control Software
+#### [QRNG](QRNG) - Quantum RNG circuit
+#### [QEDA](QEDA) - Circuit Design Software
+#### [QubitDuino](QubitDuino) - Quantum Arduino Shield
+#### [QController](QController) - Quantum Computer Control Software
