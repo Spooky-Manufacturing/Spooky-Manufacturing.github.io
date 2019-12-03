@@ -20,7 +20,7 @@ You will need to install kicad on your own, we would like to release an automate
 QEDA uses standard QASM to design the circuits. Currently the software isn't entirely functional, more logic gates need to be implemented, and the AST needs to be finished before we can see real results. To get a glimpse of how the software will run when complete, run main.py
 
 # Contribute
-If you would like to contribute, it would be much appreciated! We need documentation on our Wiki, logic gates to be designed in kicad, and placement algorithms to be implemented. An IDE may be 
+If you would like to contribute, it would be much appreciated! We need documentation on our Wiki, logic gates to be designed in kicad, and placement algorithms to be implemented.
 
 # License
 GPL (c) Spooky Manufacturing, LLC
