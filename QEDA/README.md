@@ -1,26 +1,37 @@
 # QEDA
-Quantum electronic design automation software for optical circuits
+Quantum Electronics Design Automation - The RTL of Quantum Computing!
 
-# Motivation
-After spending 4 months designing by hand a single qubit optical computer, I realized we needed an easier way to design optical circuits and processors. Thus was the inspiration behind the creation of QEDA, a reverse-compiler of sorts that takes standard QASM code and generates circuit schematics and PCB layouts for rapid prototyping.
+## What is the purpose of QEDA?
+The purpose of QEDA is to provide an open-source synthesizer for the [OpenQASM](https://github.com/Qiskit/openqasm) language. Much like Verilog and VHDL are used to define digital circuits, OpenQASM is a language used to describe quantum circuits making it the perfect language for us to build our synthesizer around.
 
-# Coding Style
-Currently, winging it! We'll be looking to move towards proper PEP coding and documentation style though in the near future. Rewrites to bring the code back into proper style are welcome!
+## Targeted Paradigm
+* **LOQC** *(Linear Optical Quantum Computing)*.
 
-# Requirements
-Kicad (Version 5.0+ preferred)
-rply
-pykicad
-numpy
+## Targeted Language
+* OpenQASM V3.x 
+  - [Language support provided by OpenQASM-LanguageSupport](https://github.com/NoahGWood/OpenQASM-LanguageSupport)
 
-# Installation
-You will need to install kicad on your own, we would like to release an automated script to help this process along though. You will also need to manually add in the footprints and libraries found in the src/lib and src/modules folders
+## Short Term Goals
+* Integration with [SpookyMFG's Universal Quantum Gate Set](https://github.com/Spooky-Manufacturing/UniversalGateSet)
+* Support for custom gates utilizing SpookyMFG's universal gates.
+  - Planned fulfillment by use of gate decomposition algorithms:
+    - **Immediate need for Shannon Decomposition Algorithm Integration**
+    - (future) Davio Algorithm Integration
+* Circuit success rate & time-to-success (TTS) estimation 
+* Automated Schematic Synthesis (Internal)
+* Automated PCB Layout (Internal)
+* Automated integration with SpookyMFG's [Q-Ctrl backends](https://github.com/Spooky-Manufacturing/QCtrl)
+* ~~GUI~~ [Fulfilled by SpookyIDE!](https://github.com/Spooky-Manufacturing/SpookyIDE)
+* ~~QASM Language Syntax Highlighting~~ [Fulfilled by OpenQASM-LanguageSupport](https://github.com/NoahGWood/OpenQASM-LanguageSupport)
 
-# How To Use
-QEDA uses standard QASM to design the circuits. Currently the software isn't entirely functional, more logic gates need to be implemented, and the AST needs to be finished before we can see real results. To get a glimpse of how the software will run when complete, run main.py
+## Mid Term Goals
+* ~~Schematic Viewer (internal)~~ [Nearly fulfilled by kicad-vscode](https://github.com/NoahGWood/kicad-vscode)
+* ~~PCB Viewer (internal)~~ [Nearly fulfilled by kicad-vscode](https://github.com/NoahGWood/kicad-vscode) 
+* Circuit Simulation (planned fulfillment via QisKit integration)
+* VHDL/Verilog Integration
 
-# Contribute
-If you would like to contribute, it would be much appreciated! We need documentation on our Wiki, logic gates to be designed in kicad, and placement algorithms to be implemented.
-
-# License
-GPL (c) Spooky Manufacturing, LLC
+## Long Term Goals
+* ~~Support for custom gate design utilizing user-defined bloch-sphere rotations & non-linear operations.~~ **Planned fulfillment by gate decomposition.**
+* Synthesis-to-Chip **ISO Chip foundaries with optical engineering capabilities!**
+* 3D Circuit View 
+* ~~Advanced simulations~~ (planned fulfillment via custom simulator)
