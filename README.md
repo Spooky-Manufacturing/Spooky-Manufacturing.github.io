@@ -31,3 +31,4 @@ Because our computers are designed to use off-the-shelf components, anyone with 
 ### More
 
 #### [Code Of Conduct](CodeOfConduct)
+#### [New Contributors](new-contributor)
