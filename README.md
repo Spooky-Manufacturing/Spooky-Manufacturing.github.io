@@ -24,8 +24,6 @@ Because our computers are designed to use off-the-shelf components, anyone with 
 
 #### [OpenQASM-LanguageServer ](OpenQASMLS)
 
-### 
-
 
 
 ### More
